@@ -1,0 +1,2 @@
+Example of using:
+dmesg | ./parse_dmesg -s avro_dmesg.json -o out.txt

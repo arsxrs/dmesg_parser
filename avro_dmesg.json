@@ -1,0 +1,18 @@
+{"name": "dmesg_parse", "type": "record", "fields": 
+    [
+        {"name": "time_label", "type": "string", "default": ""},    
+        {"name": "group",      "type": "string", "default": ""},
+        {"name": "description","type": 
+            [
+                {"name": "gen_desc", "type": "string", "default": ""},
+                {"name": "pci_desc", "type": "record", "fields": 
+                   [
+                       {"name": "bus", "type": "string", "default": ""},    
+                       {"name": "recource", "type": "string", "default": ""},
+                       {"name": "memory", "type": "string", "default": ""}
+                   ]
+               }
+           ]
+       }
+   ]
+}
